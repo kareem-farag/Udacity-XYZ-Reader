@@ -35,6 +35,7 @@ public class ArticleDetailTextAdapter extends RecyclerView.Adapter<ArticleDetail
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+
         holder.text_iv.setText(articleList.get(position));
     }
 
@@ -44,7 +45,7 @@ public class ArticleDetailTextAdapter extends RecyclerView.Adapter<ArticleDetail
     }
 
     private List<String> articleToArray(String article) {
-        String artcilesStrings[] = article.split("n/");
+        String artcilesStrings[] = article.split("\\r?\\n");
         List<String> artcilesArray = Arrays.asList(artcilesStrings);
         return artcilesArray;
     }
