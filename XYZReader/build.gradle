@@ -25,6 +25,8 @@ android {
 }
 
 dependencies {
+
+    
     implementation "com.android.support:support-v4:$androidSupportVersion"
     implementation "com.android.support:support-v13:$androidSupportVersion"
     implementation "com.android.support:appcompat-v7:$androidSupportVersion"
@@ -33,5 +35,8 @@ dependencies {
     implementation "com.android.support:cardview-v7:$androidSupportVersion"
     implementation "com.android.support:design:$androidSupportVersion"
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
     implementation files('libs/volley.jar')
 }
