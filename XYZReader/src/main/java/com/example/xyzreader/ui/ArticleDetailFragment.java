@@ -140,7 +140,7 @@ public class ArticleDetailFragment extends Fragment implements
         */
         // mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-        mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
+       // mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
@@ -221,7 +221,7 @@ public class ArticleDetailFragment extends Fragment implements
         if (mCursor != null) {
             mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
-            mRootView.animate().alpha(1);
+            //   mRootView.animate().alpha(1);
 
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             Date publishedDate = parsePublishedDate();
@@ -246,8 +246,9 @@ public class ArticleDetailFragment extends Fragment implements
 
             ArticleDetailTextAdapter articleDetailTextAdapter = new ArticleDetailTextAdapter(getContext(), mCursor.getString(ArticleLoader.Query.BODY));
             recyclerView.setAdapter(articleDetailTextAdapter);
-            Picasso.with(getContext()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(mPhotoView);
 
+
+            Picasso.with(getContext()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(mPhotoView);
 
 
         } else {
@@ -295,6 +296,7 @@ public class ArticleDetailFragment extends Fragment implements
     }
 
     public int getUpButtonFloor() {
+        /*
         if (mPhotoContainerView == null || mPhotoView.getHeight() == 0) {
             return Integer.MAX_VALUE;
         }
@@ -303,5 +305,8 @@ public class ArticleDetailFragment extends Fragment implements
         return mIsCard
                 ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
                 : mPhotoView.getHeight() - mScrollY;
+
+         */
+        return 0;
     }
 }
