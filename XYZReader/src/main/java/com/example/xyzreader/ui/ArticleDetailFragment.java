@@ -45,13 +45,15 @@ public class ArticleDetailFragment extends Fragment implements
     private View mRootView;
     private int mMutedColor = 0xFF333333;
 
-    @BindView(R.id.article_title)
-    TextView titleView;
     @BindView(R.id.article_byline)
     TextView bylineView;
+
+    @BindView(R.id.article_title)
+    TextView titleView;
+    private Unbinder unbinder;
+
     @BindView(R.id.photo)
     ImageView mPhotoView;
-    private Unbinder unbinder;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
