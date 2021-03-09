@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/detail_photo_height"
         android:fitsSystemWindows="true"
-        android:elevation="8dp"
+        android:elevation="4dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -76,7 +76,6 @@
         android:id="@+id/share_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/add_fab_background"
         android:contentDescription="@string/action_share"
         android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
