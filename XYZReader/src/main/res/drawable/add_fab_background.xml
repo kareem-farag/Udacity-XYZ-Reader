@@ -20,5 +20,5 @@
             <solid android:color="@color/theme_accent" />
         </shape>
     </item>
-    <item android:drawable="@drawable/white_selectable_item_background_circle" />
+
 </layer-list>
