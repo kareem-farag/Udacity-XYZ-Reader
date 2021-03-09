@@ -17,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
@@ -163,7 +162,7 @@ public class ArticleDetailFragment extends Fragment implements
         } else {
             mRootView.setVisibility(View.VISIBLE);
 
-            Toast.makeText(this.getActivity(), "dsf", Toast.LENGTH_SHORT).show();
+
             //  titleView.setText("N/A");
             //  bylineView.setText("N/A" );
             //bodyView.setText("N/A");
